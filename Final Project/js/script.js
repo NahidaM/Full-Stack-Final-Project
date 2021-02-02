@@ -12,16 +12,13 @@ $(document).ready(function () {
     $(".mobile-navbar").addClass("active");
   });
 
-   // SLIDER
+  // SLIDER
 
-   $(document).ready(function(){
-    $(".slider").owlCarousel(
-        {
-            items: 1,
-            loop: true,
-            autoplay: true
-        }
-    );
+  $(document).ready(function () {
+    $(".slider").owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true,
+    });
   });
-
 });

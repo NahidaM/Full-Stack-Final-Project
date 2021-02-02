@@ -12,5 +12,16 @@ $(document).ready(function () {
     $(".mobile-navbar").addClass("active");
   });
 
-  
+   // SLIDER
+
+   $(document).ready(function(){
+    $(".slider").owlCarousel(
+        {
+            items: 1,
+            loop: true,
+            autoplay: true
+        }
+    );
+  });
+
 });

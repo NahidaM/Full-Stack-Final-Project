@@ -301,4 +301,13 @@ header .mobile-navbar.active {
   line-height: 29px;
   font-family: Lora, serif;
 }
+
+#items {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#items .join h4 {
+  color: red;
+}
 /*# sourceMappingURL=style.css.map */

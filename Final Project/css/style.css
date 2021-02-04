@@ -302,12 +302,172 @@ header .mobile-navbar.active {
   font-family: Lora, serif;
 }
 
-#items {
-  padding-top: 120px;
-  padding-bottom: 120px;
+#volunteer .join {
+  position: relative;
+  text-align: center;
+  min-height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#items .join h4 {
-  color: red;
+#volunteer .join .icon .fa-hands-helping {
+  bottom: 25px;
+  color: #E27D60;
+  font-size: 50px;
+  margin-left: -90px;
+}
+
+#volunteer .join .content {
+  width: 65%;
+  text-align: left;
+  padding-left: 15px;
+}
+
+#volunteer .join .content h4 {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #E27D60;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+#volunteer .join .content p {
+  font-size: 18px;
+  color: #C38D9E;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+#volunteer .join .content a {
+  text-decoration: none;
+}
+
+#volunteer .join .content .inverse {
+  border-color: #fff;
+  background-color: transparent;
+  padding: 7px 22px;
+  color: #fff;
+}
+
+#volunteer .join .content .thm-btn {
+  background: #E27D60;
+  border-radius: 30px;
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  font-family: Lora, serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#volunteer .donate {
+  position: relative;
+  text-align: center;
+  min-height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#volunteer .donate .icon .fa-hand-holding-medical {
+  bottom: 25px;
+  color: #E27D60;
+  font-size: 50px;
+  margin-left: -90px;
+}
+
+#volunteer .donate .content {
+  width: 65%;
+  text-align: left;
+  padding-left: 15px;
+}
+
+#volunteer .donate .content h4 {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #E27D60;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+#volunteer .donate .content p {
+  font-size: 18px;
+  color: #C38D9E;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+#volunteer .donate .content a {
+  text-decoration: none;
+}
+
+#volunteer .donate .content .inverse {
+  border-color: #fff;
+  background-color: transparent;
+  padding: 7px 22px;
+  color: #fff;
+}
+
+#volunteer .donate .content .thm-btn {
+  background: #E27D60;
+  border-radius: 30px;
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  font-family: Lora, serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#workshop {
+  padding: 25px 0;
+  background-color: #f6f4f3;
+}
+
+#workshop h4 {
+  font-size: 24px;
+  color: #595959;
+  font-family: Lora, serif;
+  font-weight: 600;
+}
+
+#workshop p {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#workshop a {
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  font-size: 20px;
+  color: #009976;
+}
+
+#workshop img {
+  height: 300px;
+  margin-top: 28px;
+  margin-left: 80px;
 }
 /*# sourceMappingURL=style.css.map */

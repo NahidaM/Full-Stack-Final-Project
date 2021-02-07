@@ -462,7 +462,7 @@ header .mobile-navbar.active {
   font-family: "Playfair Display", serif;
   font-size: 15px;
   font-size: 20px;
-  color: #009976;
+  color: #E27D60;
 }
 
 #workshop img {
@@ -472,8 +472,8 @@ header .mobile-navbar.active {
 }
 
 #event {
-  padding-top: 120px;
-  padding-bottom: 90px;
+  padding-top: 90px;
+  padding-bottom: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,7 +501,8 @@ header .mobile-navbar.active {
 #event .card .item .img a img {
   border: none;
   outline: none;
-  max-width: 100%;
+  width: 100%;
+  height: 230px;
 }
 
 #event .card .item .text {
@@ -540,5 +541,95 @@ header .mobile-navbar.active {
 
 #event .card .item .text .post-date:hover {
   color: #C38D9E;
+}
+
+#our-purpose {
+  background-color: #f7f7f7;
+  position: relative;
+  z-index: 1;
+}
+
+#our-purpose .purpose {
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#our-purpose .purpose h4 {
+  color: #E27D60;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+#our-purpose .purpose h2 {
+  display: inline-block;
+  font-weight: 600;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  position: relative;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+#our-purpose .purpose h2::before {
+  background: #E27D60 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 40px;
+}
+
+#our-purpose .purpose h2::after {
+  background: #E27D60 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: 20px;
+  position: absolute;
+  width: 5px;
+}
+
+#our-purpose .purpose p {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0 7%;
+  color: #666666;
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 400;
+}
+
+#our-purpose .place {
+  margin-top: 30px;
+}
+
+#our-purpose .place .text h5 {
+  text-transform: uppercase;
+  color: #E27D60;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+#our-purpose .place .text h2 {
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+#our-purpose .place .text p {
+  color: #666666;
+  margin: 0 0 15px;
+  text-transform: none;
+  font-weight: 400;
+}
+
+#our-purpose .image img {
+  width: 550px;
+  height: 490px;
+  margin-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */

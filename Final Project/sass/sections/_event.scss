@@ -1,6 +1,6 @@
 #event {
-  padding-top: 120px;
-  padding-bottom: 90px;
+  padding-top: 90px;
+  padding-bottom: 70px;
   display: flex;
 
   .card {
@@ -17,7 +17,8 @@
           img {
             border: none;
             outline: none;
-            max-width: 100%;
+            width: 100%;
+            height: 230px;
           }
         }
       }
@@ -30,10 +31,10 @@
             font-weight: 600;
             font-size: 22px;
             margin-bottom: 15px;
-            color:$color;
+            color: $color;
             text-decoration: none;
             &:hover {
-              color:$color-black;
+              color: $color-black;
             }
           }
         }
@@ -50,9 +51,9 @@
           padding-top: 20px;
           text-transform: uppercase;
           font-weight: 500;
-          color:$color;
+          color: $color;
           &:hover {
-            color:$color-black;
+            color: $color-black;
           }
         }
       }

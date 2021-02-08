@@ -1,14 +1,19 @@
 #services {
   margin-top: 50px;
+  margin-bottom: 30px;
   .item {
     margin-right: -10px;
+    h4 {
+      color: #fff;
+      padding: 30px 30px;
+      font-size: 30px;
+    }
     .edu {
       background-image: url(../img/education.jpg);
       background-repeat: no-repeat;
       background-position: center center !important;
       background-size: cover !important;
       height: 430px;
-      opacity: 0.8;
       transition: 300ms;
     }
 
@@ -18,7 +23,6 @@
       background-position: center center !important;
       background-size: cover !important;
       height: 430px;
-      opacity: 0.8;
       transition: 300ms;
     }
 
@@ -28,7 +32,6 @@
       background-position: center center !important;
       background-size: cover !important;
       height: 430px;
-      opacity: 0.8;
       transition: 300ms;
     }
 
@@ -38,7 +41,6 @@
       background-position: center center !important;
       background-size: cover !important;
       height: 430px;
-      opacity: 0.8;
       transition: 300ms;
     }
 
@@ -48,7 +50,6 @@
       background-position: center center !important;
       background-size: cover !important;
       height: 430px;
-      opacity: 0.8;
       transition: 300ms;
     }
   }

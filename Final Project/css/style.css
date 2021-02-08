@@ -636,10 +636,17 @@ header .mobile-navbar.active {
 
 #services {
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 #services .item {
   margin-right: -10px;
+}
+
+#services .item h4 {
+  color: #fff;
+  padding: 30px 30px;
+  font-size: 30px;
 }
 
 #services .item .edu {
@@ -648,7 +655,6 @@ header .mobile-navbar.active {
   background-position: center center !important;
   background-size: cover !important;
   height: 430px;
-  opacity: 0.8;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
@@ -659,7 +665,6 @@ header .mobile-navbar.active {
   background-position: center center !important;
   background-size: cover !important;
   height: 430px;
-  opacity: 0.8;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
@@ -670,7 +675,6 @@ header .mobile-navbar.active {
   background-position: center center !important;
   background-size: cover !important;
   height: 430px;
-  opacity: 0.8;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
@@ -681,7 +685,6 @@ header .mobile-navbar.active {
   background-position: center center !important;
   background-size: cover !important;
   height: 430px;
-  opacity: 0.8;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
@@ -692,8 +695,58 @@ header .mobile-navbar.active {
   background-position: center center !important;
   background-size: cover !important;
   height: 430px;
-  opacity: 0.8;
   -webkit-transition: 300ms;
   transition: 300ms;
+}
+
+#subscribe .subscribe-area {
+  background: #fafafa;
+  margin-bottom: 30px;
+}
+
+#subscribe .subscribe-area .subscribe-content {
+  margin-top: 40px;
+}
+
+#subscribe .subscribe-area .subscribe-content h2 {
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: #E27D60;
+  text-transform: uppercase;
+}
+
+#subscribe .subscribe-area form {
+  border: 3px solid #f1f1f1;
+  font-family: Arial;
+}
+
+#subscribe .subscribe-area form .container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+#subscribe .subscribe-area form .container input[type="text"],
+#subscribe .subscribe-area form .container input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#subscribe .subscribe-area form .container input[type="checkbox"] {
+  margin-top: 16px;
+}
+
+#subscribe .subscribe-area form .container input[type="submit"] {
+  background-color: #E27D60;
+  color: white;
+  border: none;
+}
+
+#subscribe .subscribe-area form .container input[type="submit"]:hover {
+  opacity: 0.8;
 }
 /*# sourceMappingURL=style.css.map */

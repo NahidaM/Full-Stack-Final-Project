@@ -1,0 +1,55 @@
+#services {
+  margin-top: 50px;
+  .item {
+    margin-right: -10px;
+    .edu {
+      background-image: url(../img/education.jpg);
+      background-repeat: no-repeat;
+      background-position: center center !important;
+      background-size: cover !important;
+      height: 430px;
+      opacity: 0.8;
+      transition: 300ms;
+    }
+
+    .health {
+      background-image: url(../img/health.jpg);
+      background-repeat: no-repeat;
+      background-position: center center !important;
+      background-size: cover !important;
+      height: 430px;
+      opacity: 0.8;
+      transition: 300ms;
+    }
+
+    .char {
+      background-image: url(../img/yellow-flowers.jpg);
+      background-repeat: no-repeat;
+      background-position: center center !important;
+      background-size: cover !important;
+      height: 430px;
+      opacity: 0.8;
+      transition: 300ms;
+    }
+
+    .rel {
+      background-image: url(../img/praying-sunset.jpg);
+      background-repeat: no-repeat;
+      background-position: center center !important;
+      background-size: cover !important;
+      height: 430px;
+      opacity: 0.8;
+      transition: 300ms;
+    }
+
+    .sport {
+      background-image: url(../img/Sports-football.jpg);
+      background-repeat: no-repeat;
+      background-position: center center !important;
+      background-size: cover !important;
+      height: 430px;
+      opacity: 0.8;
+      transition: 300ms;
+    }
+  }
+}

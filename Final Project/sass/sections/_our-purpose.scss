@@ -2,6 +2,7 @@
   background-color: #f7f7f7;
   position: relative;
   z-index: 1;
+  
   .purpose {
     overflow: hidden;
     margin-top: 50px;
@@ -53,6 +54,7 @@
   }
   .place {
     margin-top: 30px;
+    margin-bottom: 30px;
     .text {
       h5 {
         text-transform: uppercase;

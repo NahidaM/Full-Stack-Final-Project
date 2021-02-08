@@ -1,7 +1,15 @@
 header .middle-nav {
-  background-color: #E27D60;
+  background-color: #e27d60;
   width: 100%;
   height: 70px;
+}
+
+header .middle-nav .header-title h4 {
+  font-size: 17px;
+  width: 500px;
+  margin-left: -90px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 header .middle-nav .header-left ul {
@@ -52,7 +60,7 @@ header nav ul li a {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #C38D9E !important;
+  color: #c38d9e !important;
   font-weight: 700;
 }
 
@@ -67,7 +75,7 @@ header nav ul li a::after {
           transform: translateX(-50%);
   width: 0;
   height: 1px;
-  background-color: #C38D9E;
+  background-color: #c38d9e;
 }
 
 header nav ul li a:hover {
@@ -91,7 +99,7 @@ header nav ul li span {
 header nav ul li ul {
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  background-color: #85DCBB;
+  background-color: #ffffff;
   position: absolute;
   top: 115px;
   left: -150px;
@@ -140,7 +148,7 @@ header nav ul li .elements li {
 header nav ul li .shop {
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  background-color: #85DCBB;
+  background-color: #ffffff;
   position: absolute;
   top: 115px;
   width: 100%;
@@ -183,8 +191,8 @@ header nav ul li.shop-li {
 
 header nav ul .shop-cart sup {
   padding: 1px 3px;
-  color: #85DCBB;
-  background-color: #E27D60;
+  color: #ffffff;
+  background-color: #e27d60;
 }
 
 header nav ul .shop-cart ul {
@@ -210,7 +218,7 @@ header nav ul .search ul li i {
 header .mobile-navbar {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-color: #85DCBB;
+  background-color: #ffffff;
   top: 0;
   width: 0;
   opacity: 0;
@@ -222,7 +230,7 @@ header .mobile-navbar .fa-times {
   top: 50px;
   right: 50px;
   cursor: pointer;
-  color: #E27D60;
+  color: #e27d60;
 }
 
 header .mobile-navbar ul li {
@@ -232,7 +240,7 @@ header .mobile-navbar ul li {
 header .mobile-navbar ul li a {
   font-size: 13px;
   text-transform: uppercase;
-  color: #C38D9E;
+  color: #c38d9e;
   letter-spacing: 0.1em;
 }
 
@@ -293,7 +301,7 @@ header .mobile-navbar.active {
 }
 
 #slider .context h1 span {
-  color: #E27D60;
+  color: #e27d60;
 }
 
 #slider .context p {
@@ -319,7 +327,7 @@ header .mobile-navbar.active {
 
 #volunteer .join .icon .fa-hands-helping {
   bottom: 25px;
-  color: #E27D60;
+  color: #e27d60;
   font-size: 50px;
   margin-left: -90px;
 }
@@ -333,7 +341,7 @@ header .mobile-navbar.active {
 #volunteer .join .content h4 {
   font-size: 25px;
   text-transform: uppercase;
-  color: #E27D60;
+  color: #e27d60;
   font-weight: 700;
   margin: 0;
   margin-bottom: 15px;
@@ -341,7 +349,7 @@ header .mobile-navbar.active {
 
 #volunteer .join .content p {
   font-size: 18px;
-  color: #C38D9E;
+  color: #c38d9e;
   line-height: 24px;
   font-weight: 500;
 }
@@ -358,7 +366,7 @@ header .mobile-navbar.active {
 }
 
 #volunteer .join .content .thm-btn {
-  background: #E27D60;
+  background: #e27d60;
   border-radius: 30px;
   display: inline-block;
   color: #fff;
@@ -388,7 +396,7 @@ header .mobile-navbar.active {
 
 #volunteer .donate .icon .fa-hand-holding-medical {
   bottom: 25px;
-  color: #E27D60;
+  color: #e27d60;
   font-size: 50px;
   margin-left: -90px;
 }
@@ -402,7 +410,7 @@ header .mobile-navbar.active {
 #volunteer .donate .content h4 {
   font-size: 25px;
   text-transform: uppercase;
-  color: #E27D60;
+  color: #e27d60;
   font-weight: 700;
   margin: 0;
   margin-bottom: 15px;
@@ -410,7 +418,7 @@ header .mobile-navbar.active {
 
 #volunteer .donate .content p {
   font-size: 18px;
-  color: #C38D9E;
+  color: #c38d9e;
   line-height: 24px;
   font-weight: 500;
 }
@@ -427,7 +435,7 @@ header .mobile-navbar.active {
 }
 
 #volunteer .donate .content .thm-btn {
-  background: #E27D60;
+  background: #e27d60;
   border-radius: 30px;
   display: inline-block;
   color: #fff;
@@ -462,7 +470,7 @@ header .mobile-navbar.active {
   font-family: "Playfair Display", serif;
   font-size: 15px;
   font-size: 20px;
-  color: #E27D60;
+  color: #e27d60;
 }
 
 #workshop img {
@@ -515,12 +523,12 @@ header .mobile-navbar.active {
   font-weight: 600;
   font-size: 22px;
   margin-bottom: 15px;
-  color: #E27D60;
+  color: #e27d60;
   text-decoration: none;
 }
 
 #event .card .item .text h4 a:hover {
-  color: #C38D9E;
+  color: #c38d9e;
 }
 
 #event .card .item .text p {
@@ -536,11 +544,11 @@ header .mobile-navbar.active {
   padding-top: 20px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #E27D60;
+  color: #e27d60;
 }
 
 #event .card .item .text .post-date:hover {
-  color: #C38D9E;
+  color: #c38d9e;
 }
 
 #our-purpose {
@@ -556,7 +564,7 @@ header .mobile-navbar.active {
 }
 
 #our-purpose .purpose h4 {
-  color: #E27D60;
+  color: #e27d60;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 22px;
@@ -573,7 +581,7 @@ header .mobile-navbar.active {
 }
 
 #our-purpose .purpose h2::before {
-  background: #E27D60 none repeat scroll 0 0;
+  background: #e27d60 none repeat scroll 0 0;
   bottom: 0;
   content: "";
   height: 2px;
@@ -584,7 +592,7 @@ header .mobile-navbar.active {
 }
 
 #our-purpose .purpose h2::after {
-  background: #E27D60 none repeat scroll 0 0;
+  background: #e27d60 none repeat scroll 0 0;
   bottom: 0;
   content: "";
   height: 2px;
@@ -611,7 +619,7 @@ header .mobile-navbar.active {
 
 #our-purpose .place .text h5 {
   text-transform: uppercase;
-  color: #E27D60;
+  color: #e27d60;
   font-weight: 800;
   font-size: 20px;
 }
@@ -701,7 +709,7 @@ header .mobile-navbar.active {
 
 #subscribe .subscribe-area {
   background: #fafafa;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 #subscribe .subscribe-area .subscribe-content {
@@ -711,7 +719,7 @@ header .mobile-navbar.active {
 #subscribe .subscribe-area .subscribe-content h2 {
   margin-bottom: 30px;
   font-size: 40px;
-  color: #E27D60;
+  color: #e27d60;
   text-transform: uppercase;
 }
 
@@ -741,12 +749,175 @@ header .mobile-navbar.active {
 }
 
 #subscribe .subscribe-area form .container input[type="submit"] {
-  background-color: #E27D60;
+  background-color: #e27d60;
   color: white;
   border: none;
 }
 
 #subscribe .subscribe-area form .container input[type="submit"]:hover {
   opacity: 0.8;
+}
+
+footer {
+  background: #e27d60 !important;
+}
+
+footer .healdi {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer .healdi p {
+  text-transform: none;
+  font-weight: 400;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+footer .healdi .adress ul {
+  list-style-type: none;
+}
+
+footer .healdi .adress ul .phone-li {
+  margin-top: 30px;
+}
+
+footer .healdi .adress ul li .email h5 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.25rem;
+}
+
+footer .healdi .adress ul li .email i {
+  position: absolute;
+  bottom: 32px;
+  left: -45px;
+}
+
+footer .links {
+  margin-top: 50px;
+}
+
+footer .links .services h4 {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+footer .links .services ul {
+  padding-left: 20px;
+}
+
+footer .links .services ul li {
+  margin-bottom: 15px;
+  padding-left: 0;
+  color: #ffffff;
+}
+
+footer .links .services ul li :hover {
+  color: #c38d9e;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+footer .links .services ul li :last-child {
+  margin-bottom: 0;
+}
+
+footer .links .services ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+footer .links .useful h4 {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+footer .links .useful ul {
+  padding-left: 20px;
+}
+
+footer .links .useful ul li {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+footer .links .useful ul li :hover {
+  color: #c38d9e;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+footer .links .useful ul li :last-child {
+  margin-bottom: 0;
+}
+
+footer .links .useful ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+footer .branches {
+  margin-top: 110px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 55px 37px 12px;
+  border-bottom: 2px solid #ffffff;
+}
+
+footer .branches .branch ul {
+  list-style-type: none;
+}
+
+footer .branches .branch ul li {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+footer .branches .branch ul li :last-child {
+  margin: 0;
+}
+
+footer .branches .branch ul li b {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+footer .footer-end {
+  background: rgba(255, 255, 255, 0.03);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+  padding-bottom: 0;
+}
+
+footer .footer-end .social {
+  text-align: center;
+}
+
+footer .footer-end .social a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer .footer-end .social a p {
+  padding-right: 20px;
+}
+
+footer .footer-end .copy {
+  text-align: center;
+}
+
+footer .footer-end .copy a {
+  text-decoration: none;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

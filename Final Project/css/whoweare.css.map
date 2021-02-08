@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACR,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,IAAI;CAQjB;;AAVD,AAKM,SALG,CAGP,KAAK,CACH,EAAE,CACA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;CACtB",
+    "sources": [
+        "../sass/sections/whoweare.scss"
+    ],
+    "names": [],
+    "file": "whoweare.css"
+}

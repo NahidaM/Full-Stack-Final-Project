@@ -768,6 +768,12 @@ header .mobile-navbar.active {
   color: #e27d60;
 }
 
+#whoweare .info p span {
+  color: #e27d60;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 footer {
   background: #e27d60 !important;
 }

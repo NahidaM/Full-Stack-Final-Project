@@ -774,6 +774,29 @@ header .mobile-navbar.active {
   font-weight: 500;
 }
 
+#purpose-assoc {
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+#purpose-assoc .info h5 {
+  color: #e27d60;
+}
+
+#product {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#product .card {
+  margin-bottom: 30px;
+}
+
+#product .card .card-img-top {
+  height: 190px;
+  width: 286px;
+}
+
 footer {
   background: #e27d60 !important;
 }

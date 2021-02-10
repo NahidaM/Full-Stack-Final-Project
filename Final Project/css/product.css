@@ -1,0 +1,14 @@
+#product {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#product .card {
+  margin-bottom: 30px;
+}
+
+#product .card .card-img-top {
+  height: 190px;
+  width: 286px;
+}
+/*# sourceMappingURL=product.css.map */

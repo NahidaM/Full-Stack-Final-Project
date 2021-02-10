@@ -11,4 +11,16 @@
   height: 190px;
   width: 286px;
 }
+
+#product .card .card-body .card-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+#product .card .card-body .card-text ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=product.css.map */

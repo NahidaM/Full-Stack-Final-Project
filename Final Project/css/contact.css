@@ -1,0 +1,16 @@
+#contact {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#contact .title {
+  background-color: #e27d60;
+  height: 100px;
+  width: 100%;
+}
+
+#contact .title h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+/*# sourceMappingURL=contact.css.map */

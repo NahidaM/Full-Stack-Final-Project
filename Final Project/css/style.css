@@ -901,6 +901,66 @@ header .mobile-navbar.active {
   color: #c38d9e;
 }
 
+#contact {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#contact .title {
+  background-color: #e27d60;
+  height: 100px;
+  width: 100%;
+}
+
+#contact .title h1 {
+  text-align: center;
+  padding-top: 20px;
+  color: #ffffff;
+}
+
+#contact form {
+  margin-top: 20px;
+}
+
+#contact form input[type="text"],
+#contact form select,
+#contact form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#contact form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#contact form label {
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+
+#contact form .email {
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+}
+
 footer {
   background: #e27d60 !important;
 }

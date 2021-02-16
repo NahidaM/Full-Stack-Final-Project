@@ -1,53 +1,73 @@
 #contact {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  .title {
-    background-color: $color;
-    height: 100px;
-    width: 100%;
-    h1 {
-      text-align: center;
-      padding-top: 20px;
-      color: $color-white;
+  margin-bottom: 10px;
+  .left-info {
+    background-color: $color-black;
+    .common-info {
+      margin: 70px;
+    }
+    .title {
+      background-color: $color;
+      height: 100px;
+      width: 100%;
+      border-radius: 20px;
+      h1 {
+        text-align: center;
+        padding-top: 20px;
+        color: $color-white;
+      }
+    }
+    form {
+      
+      margin-top: 20px;
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        border: none;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: $color;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: $color;
+      }
+
+      label {
+        font-size: 16px;
+        color: black;
+        font-weight: 700;
+      }
+      .email {
+        font-size: 16px;
+        color: black;
+        font-weight: 400;
+      }
     }
   }
-  form {
-    margin-top: 20px;
-    input[type="text"],
-    select,
-    textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-top: 6px;
-      margin-bottom: 16px;
-      resize: vertical;
-    }
 
-    input[type="submit"] {
-      background-color: #4caf50;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #45a049;
-    }
-
-    label {
-      font-size: 16px;
-      color: black;
-      font-weight: 700;
-    }
-    .email {
-      font-size: 16px;
-      color: black;
-      font-weight: 400;
+  .right-info{
+    background-color: #d9d9d9;
+    .contact-info{
+      margin-top: 100px;
+      margin-left: 100px;
+      height: 500px;
+      width: 400px;
+      background: white;
+      padding: 50px;
     }
   }
 }

@@ -6,13 +6,14 @@ header {
     .header-title {
       h4 {
         font-size: 17px;
-        width: 500px;
-        margin-left: -90px;
+        width: 330px;
+        margin-left: -80px;
         font-weight: 700;
-        color: $color-white;
+        color: #ffffff;
       }
     }
     .header-left {
+      margin-left: 65px;
       ul {
         display: flex;
         list-style: none;
@@ -23,8 +24,30 @@ header {
           }
         }
       }
+      .btn {
+        background-color: $color-black;
+        border: none;
+        border-radius: 40px;
+        width: 120px;
+        padding: 7px;
+        font-weight: 600;
+      }
     }
     .header-right {
+      .profile {
+        font-size: 45px;
+        margin-top: -16px;
+
+        a {
+          text-decoration: none;
+          i {
+            background-color: $color-black;
+            color: $color-white;
+            border-radius: 30px;
+          }
+        }
+      }
+      margin-left: 90px;
       ul {
         display: flex;
         list-style: none;
@@ -34,6 +57,15 @@ header {
             margin: 5px;
           }
         }
+      }
+      .btn {
+        background-color: $color-black;
+        border: none;
+        border-radius: 40px;
+        width: 100px;
+        padding: 8px;
+        color: $color-white;
+        font-weight: 600;
       }
     }
   }

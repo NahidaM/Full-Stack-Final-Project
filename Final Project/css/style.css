@@ -6,10 +6,14 @@ header .middle-nav {
 
 header .middle-nav .header-title h4 {
   font-size: 17px;
-  width: 500px;
-  margin-left: -90px;
+  width: 330px;
+  margin-left: -80px;
   font-weight: 700;
   color: #ffffff;
+}
+
+header .middle-nav .header-left {
+  margin-left: 65px;
 }
 
 header .middle-nav .header-left ul {
@@ -24,6 +28,34 @@ header .middle-nav .header-left ul li a {
   margin: 5px;
 }
 
+header .middle-nav .header-left .btn {
+  background-color: #c38d9e;
+  border: none;
+  border-radius: 40px;
+  width: 120px;
+  padding: 7px;
+  font-weight: 600;
+}
+
+header .middle-nav .header-right {
+  margin-left: 90px;
+}
+
+header .middle-nav .header-right .profile {
+  font-size: 45px;
+  margin-top: -16px;
+}
+
+header .middle-nav .header-right .profile a {
+  text-decoration: none;
+}
+
+header .middle-nav .header-right .profile a i {
+  background-color: #c38d9e;
+  color: #ffffff;
+  border-radius: 30px;
+}
+
 header .middle-nav .header-right ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,6 +66,16 @@ header .middle-nav .header-right ul {
 header .middle-nav .header-right ul li a {
   text-decoration: none;
   margin: 5px;
+}
+
+header .middle-nav .header-right .btn {
+  background-color: #c38d9e;
+  border: none;
+  border-radius: 40px;
+  width: 100px;
+  padding: 8px;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 header nav {
@@ -902,33 +944,42 @@ header .mobile-navbar.active {
 }
 
 #contact {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
-#contact .title {
+#contact .left-info {
+  background-color: #c38d9e;
+}
+
+#contact .left-info .common-info {
+  margin: 70px;
+}
+
+#contact .left-info .title {
   background-color: #e27d60;
   height: 100px;
   width: 100%;
+  border-radius: 20px;
 }
 
-#contact .title h1 {
+#contact .left-info .title h1 {
   text-align: center;
   padding-top: 20px;
   color: #ffffff;
 }
 
-#contact form {
+#contact .left-info form {
   margin-top: 20px;
 }
 
-#contact form input[type="text"],
-#contact form select,
-#contact form textarea {
+#contact .left-info form input[type="text"],
+#contact .left-info form select,
+#contact .left-info form textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 20px;
+  border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-top: 6px;
@@ -936,29 +987,42 @@ header .mobile-navbar.active {
   resize: vertical;
 }
 
-#contact form input[type="submit"] {
-  background-color: #4caf50;
+#contact .left-info form input[type="submit"] {
+  background-color: #e27d60;
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
-#contact form input[type="submit"]:hover {
-  background-color: #45a049;
+#contact .left-info form input[type="submit"]:hover {
+  background-color: #e27d60;
 }
 
-#contact form label {
+#contact .left-info form label {
   font-size: 16px;
   color: black;
   font-weight: 700;
 }
 
-#contact form .email {
+#contact .left-info form .email {
   font-size: 16px;
   color: black;
   font-weight: 400;
+}
+
+#contact .right-info {
+  background-color: #d9d9d9;
+}
+
+#contact .right-info .contact-info {
+  margin-top: 100px;
+  margin-left: 100px;
+  height: 500px;
+  width: 400px;
+  background: white;
+  padding: 50px;
 }
 
 footer {

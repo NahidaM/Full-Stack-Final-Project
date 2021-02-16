@@ -177,53 +177,97 @@
 
     <!-- CONTACT SECTION START -->
     <section id="contact">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-8 offset-lg-2">
-            <div class="title">
-              <h1>Bizimlə əlaqə</h1>
+          <div class="col-lg-7 left-info">
+            <div class="common-info">
+              <div class="title">
+                <h1>Bizimlə əlaqə</h1>
+              </div>
+              <form>
+                <label for="fname">Adınız</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Zəhmət olmasa adınızı qeyd edin..."
+                />
+
+                <label for="lname">Soyadınız</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Zəhmət olmasa soyadınızı qeyd edin..."
+                />
+
+                <label class="email" for="email"><b>Email</b></label>
+                <input
+                  type="text"
+                  placeholder="Zəhmət olmasa emailinizi daxil edin"
+                  name="email"
+                  id="email"
+                  required
+                />
+
+                <label for="subject">Mövzu</label>
+                <textarea
+                  id="subject"
+                  name="subject"
+                  placeholder="Zəhmət olmasa mövzu qeyd edin..."
+                  style="height: 200px"
+                ></textarea>
+
+                <input type="submit" value="Təqdim etmək" />
+              </form>
             </div>
-            <form>
-              <label for="fname">Adınız</label>
-              <input
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Zəhmət olmasa adınızı qeyd edin..."
-              />
-
-              <label for="lname">Soyadınız</label>
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Zəhmət olmasa soyadınızı qeyd edin..."
-              />
-
-              <label class="email" for="email"><b>Email</b></label>
-              <input
-                type="text"
-                placeholder="Zəhmət olmasa emailinizi daxil edin"
-                name="email"
-                id="email"
-                required
-              />
-
-              <label for="subject">Mövzu</label>
-              <textarea
-                id="subject"
-                name="subject"
-                placeholder="Zəhmət olmasa nə isə qeyd edin..."
-                style="height: 200px"
-              ></textarea>
-
-              <input type="submit" value="Təqdim etmək" />
-            </form>
+          </div>
+          <div class="col-lg-5 right-info">
+            <div class="contact-info">
+              <div class="container">
+                <h5>Address</h5>
+                <p>
+                  Şəhid Xudayar Yusifzadə adına Evsiz Uşaq və Gənclərin
+                  Müdafiəsi və İnkişafı Dərnəyi <br />Bakı, Azərbaycan
+                </p>
+                <h5>Əlaqə nömrəsi</h5>
+                <p>(994)123 45 67 <br />(994)123 45 89</p>
+                <h5>İş saatları</h5>
+                <p>
+                  Bazar ertəsi - Cümə 10:00 – 20:00
+                  <br />
+                  Şənbə - Bazar 11:00 – 19:00
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- CONTACT SECTION END -->
+    <!-- MAP SECTION START -->
+    <section id="map">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="map w-100">
+              <iframe
+                class="w-100"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.428490145624!2d49.85175681476099!3d40.3771949659681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d079efb5163%3A0xc20aa51a5f0b5e01!2sCode%20Academy!5e0!3m2!1sen!2s!4v1602374585799!5m2!1sen!2s"
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MAP SECTION END -->
     <!-- FOOTER START -->
     <footer>
       <div class="container">

@@ -19,11 +19,14 @@
 @import "sections/product";
 @import "sections/events";
 @import "sections/contact";
+@import "sections/paypage-1";
+@import "sections/profile";
+@import "sections/favorites";
 @import "sections/footer";
 
 // import extra page
 
-// @import "sections/login";
-// @import "sections/signup";
-// @import "sections/donate";
-// @import "sections/join";
+@import "sections/login";
+@import "sections/register";
+@import "sections/donate";
+@import "sections/join_us";

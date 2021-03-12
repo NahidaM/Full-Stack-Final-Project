@@ -7,7 +7,6 @@ header {
       h4 {
         font-size: 17px;
         width: 330px;
-        margin-left: -80px;
         font-weight: 700;
         color: #ffffff;
       }
@@ -111,6 +110,7 @@ header {
         }
         .fa-search {
           transform: rotateY(180deg);
+          color: $color-black;
         }
         i,
         span {
@@ -138,6 +138,7 @@ header {
             }
             #input-search {
               border: none;
+
               &:focus {
                 outline: none;
               }
@@ -201,6 +202,9 @@ header {
         position: static;
       }
       .shop-cart {
+        i {
+          color: $color-black;
+        }
         sup {
           padding: 1px 3px;
           color: $color-white;
@@ -229,7 +233,6 @@ header {
       }
     }
   }
-
   .mobile-navbar {
     transition: all 0.3s;
     background-color: $color-white;
@@ -278,10 +281,60 @@ header {
     }
   }
   .mobile-navbar.active {
-    width: 420px;
+    width: 390px;
     visibility: visible;
     opacity: 1;
     right: 0;
     z-index: 9;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    .middle-nav {
+      height: 210px;
+      .header-title {
+        h4 {
+          width: 100%;
+        }
+      }
+    }
+    nav {
+      #logo {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    .middle-nav {
+      height: 210px;
+      .header-left {
+        margin-left: 0px;
+      }
+      .header-right {
+        margin-left: 50px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  header {
+    nav {
+      #logo {
+        margin-bottom: -63px;
+      }
+      ul {
+        li {
+          position: relative;
+          padding: 15px 5px;
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+    }
   }
 }

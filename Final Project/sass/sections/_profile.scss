@@ -1,0 +1,107 @@
+#dashboard {
+  padding-top: 40px;
+  background-color: beige;
+  .user-menu {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 6px 18px 0px rgba(16, 5, 54, 0.17);
+    padding: 50px;
+    .user {
+      text-align: center;
+      margin-bottom: 30px;
+      .image {
+        width: 100px;
+        margin: 0 auto 30px;
+        position: relative;
+        img {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+        }
+        label {
+          position: absolute;
+          bottom: 5px;
+          right: 0;
+          width: 30px;
+          height: 30px;
+          margin-left: 0;
+          line-height: 30px;
+          text-align: center;
+          border-radius: 50%;
+          font-size: 16px;
+          background: linear-gradient(135deg, #e63981 0%, #e5ff54 100%);
+          cursor: pointer;
+        }
+      }
+      h4 {
+        color: $color;
+      }
+    }
+    .menu {
+      li {
+        list-style-type: none;
+        a {
+          padding: 10px 20px;
+          color: $color;
+          text-transform: capitalize;
+          font-weight: 500;
+          line-height: 30px;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          border-radius: 25px;
+          display: block;
+          text-decoration: none;
+          &:hover {
+            background: #f7f6fc;
+          }
+          &.active {
+            background: #f7f6fc;
+          }
+          i {
+            font-weight: 400;
+            margin-right: 10px;
+            color: #ee4730;
+          }
+        }
+      }
+    }
+  }
+  .details {
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 18px 0px rgba(16, 5, 54, 0.17);
+    padding: 30px;
+    .header {
+      margin-bottom: 20px;
+      h3 {
+        color: $color;
+      }
+      a {
+        color: $color;
+        text-decoration: none;
+      }
+    }
+    ul {
+      li {
+        color: $color-black;
+        display: flex;
+        margin-bottom: 8px;
+        font-weight: 600;
+        .info {
+          width: 135px;
+          position: relative;
+          padding-right: 15px;
+          &::after {
+            content: ":";
+            position: absolute;
+            right: 0;
+          }
+        }
+        .info-value {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}

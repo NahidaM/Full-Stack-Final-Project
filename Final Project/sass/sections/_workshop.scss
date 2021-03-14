@@ -4,7 +4,7 @@
 
   h4 {
     font-size: 24px;
-    color: #595959;
+    color: $color;
     font-family: $font-family-lora;
     font-weight: 600;
   }
@@ -23,7 +23,7 @@
 
   img {
     height: 300px;
-    margin-top: 28px;
+    margin-top: 6px;
     margin-left: 80px;
   }
 }

@@ -537,7 +537,7 @@ header .mobile-navbar.active {
 
 #workshop h4 {
   font-size: 24px;
-  color: #595959;
+  color: #e27d60;
   font-family: Lora, serif;
   font-weight: 600;
 }
@@ -557,7 +557,7 @@ header .mobile-navbar.active {
 
 #workshop img {
   height: 300px;
-  margin-top: 28px;
+  margin-top: 6px;
   margin-left: 80px;
 }
 
@@ -843,7 +843,7 @@ header .mobile-navbar.active {
 }
 
 #services .item .rel {
-  background-image: url(../img/praying-sunset.jpg);
+  background-image: url(../img/Sports-football.jpg);
   background-repeat: no-repeat;
   background-position: center center !important;
   background-size: cover !important;
@@ -853,7 +853,7 @@ header .mobile-navbar.active {
 }
 
 #services .item .sport {
-  background-image: url(../img/Sports-football.jpg);
+  background-image: url(../img/handmade.jpg);
   background-repeat: no-repeat;
   background-position: center center !important;
   background-size: cover !important;
@@ -1368,6 +1368,93 @@ header .mobile-navbar.active {
 #dashboard .favorites .card .card-body .card-text ul .cart {
   margin-top: 10px;
   width: 260px;
+}
+
+#event-details {
+  padding-bottom: 50px;
+  background-color: white;
+}
+
+#event-details .banner-content {
+  padding: 90px;
+  background-color: #f1f1cf;
+}
+
+#event-details .banner-content h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #474747;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#event-details .card {
+  margin-top: 50px;
+  border: none;
+}
+
+#event-details .card .text h4 {
+  margin-top: 35px;
+  text-align: center;
+}
+
+#event-details .card .text h4 a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  color: #e27d60;
+  text-transform: uppercase;
+}
+
+#event-details .card .text p {
+  font-size: 16px;
+  color: #606060;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+
+#event-details .card .text .post-date {
+  margin-top: 20px;
+  border-top: 1px solid #e7e7e7;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #e27d60;
+}
+
+#event-details .sidebar {
+  margin-top: 50px;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  padding: 15px;
+}
+
+#event-details .sidebar .side-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  color: #f14b05;
+  font-weight: 600;
+}
+
+#event-details .sidebar ul {
+  list-style: none;
+  padding-left: 0px !important;
+}
+
+#event-details .sidebar ul li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#event-details .sidebar ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 footer {

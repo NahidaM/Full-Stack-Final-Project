@@ -1,0 +1,81 @@
+#event-details {
+  padding-bottom: 50px;
+  background-color: rgb(255, 255, 255);
+  .banner-content {
+    padding: 90px;
+    background-color: #f1f1cf;
+    h2 {
+      text-align: center;
+      font-size: 40px;
+      color: rgb(71, 71, 71);
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  .card {
+    margin-top: 50px;
+    border: none;
+    .text {
+      h4 {
+        margin-top: 35px;
+        text-align: center;
+        a {
+          text-decoration: none;
+          font-size: 24px;
+          font-weight: 700;
+          font-family: "Open Sans", sans-serif;
+          color: $color;
+          text-transform: uppercase;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        color: #606060;
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .post-date {
+        margin-top: 20px;
+        border-top: 1px solid #e7e7e7;
+        padding-top: 20px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #e27d60;
+      }
+    }
+  }
+
+  .sidebar {
+    margin-top: 50px;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    padding: 15px;
+    .side-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e6e6e6;
+      color: #f14b05;
+      font-weight: 600;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0px !important;
+      li {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #e6e6e6;
+        a {
+          color: #333;
+          text-decoration: none;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

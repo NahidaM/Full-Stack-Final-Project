@@ -1,0 +1,6 @@
+﻿@model IEnumerable<Event>
+
+@foreach (Event pro in Model)
+{
+<li><a href="ProductDetail/Index/@pro.Id">@pro.Title</a></li>}
+

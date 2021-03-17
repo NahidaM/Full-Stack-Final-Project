@@ -1,0 +1,89 @@
+﻿@model RegisterVM
+@{
+    ViewData["Title"] = "Register";
+}
+
+<section id="register">
+    <div class="container">
+        <div class="account d-flex">
+            <div class="left-side">
+                <div class="header text-center">
+                    <h1>Qeydiyyat</h1>
+                    <p>Xoş Gəlmisiniz!</p>
+                </div>
+                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                <form method="post">
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="far fa-envelope"></i>
+                        </label>
+                        <input  asp-for="FullName"
+                               class="form-control"
+                               type="text"
+                               placeholder="Fullname" />
+                        <span asp-validation-for="FullName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="far fa-envelope"></i>
+                        </label>
+                        <input  asp-for="UserName"
+                               class="form-control"
+                               type="text"
+                               placeholder="Username" />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="far fa-envelope"></i>
+                        </label>
+                        <input  asp-for="Email"
+                               class="form-control"
+                               type="text"
+                               placeholder="Email Address" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">
+                            <i class="fas fa-lock"></i>
+                        </label>
+                        <input  asp-for="Password"
+                               class="form-control"
+                               type="password"
+                               placeholder="Password" />
+                        <span class="show-password"><i class="fas fa-eye"></i></span>
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password-comfirm">
+                            <i class="fas fa-lock"></i>
+                        </label>
+                        <input  asp-for="CheckPassword"
+                               class="form-control"
+                               type="password"
+                               placeholder="Re-Password" />
+                        <span asp-validation-for="CheckPassword" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-0 mt-4">
+                        <button type="submit"
+                                data-text="login"
+                                class="button-one submit-button mt-15">
+                            Qeydiyyatdan Keç
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="right-side">
+                <div class="sign-up">
+                    <h2>Artıq sizin qeydiyyatınız var?</h2>
+                    <p>Hesabına daxil ol!</p>
+                    <a asp-controller="Account" asp-action="Login">Daxil Ol</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+

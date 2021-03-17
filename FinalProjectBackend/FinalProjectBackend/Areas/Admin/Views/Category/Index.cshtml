@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Category>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="col-lg-8 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div class="d-grid gap-2 d-md-flex justify-content-between">
+                <h3 class="card-title">Categories</h3>
+                <a asp-controller="Category" asp-action="Create" class="btn btn-success btn-icon-text">
+                    <i class="mdi mdi-plus btn-icon-prepend"> Add</i>
+                </a>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Options
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Category ctg in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @ctg.Name
+                                </td>
+                                <td>
+
+                                    <a asp-action="Detail" asp-route-id="@ctg.Id">
+                                        <button class="btn btn-inverse-secondary btn-icon">
+                                            <i class="mdi mdi-information-variant"></i>
+                                        </button>
+                                    </a>
+                                    <a asp-action="Update" asp-route-id="@ctg.Id">
+                                        <button class="btn btn-inverse-primary btn-icon">
+                                            <i class="mdi mdi-pencil"></i>
+                                        </button>
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@ctg.Id">
+                                        <button class="btn btn-inverse-danger btn-icon">
+                                            <i class="mdi mdi-delete"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+﻿
+@model HowWeAreVM  
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<!-- MAIN START -->
+<main>
+    <!-- COVER SECTION START -->
+    <section id="cover">
+        <div class="cover-img">
+            <img class="img-fluid" src="~/img/@Model.Cover.ElementAt(0).Image" alt="" />
+        </div>
+    </section>
+    <!-- COVER SECTION END -->
+    <!-- WHO WE ARE SECTION START -->
+    <section id="whoweare">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="info">
+                        @Html.Raw(Model.HowWeAre.Title)
+                        <a style=" text-decoration: none; color: #e27d60; font-size : 20px;" asp-controller="HowWeAre" asp-action="Detail">Xudayar Yusifzadə kimdir?</a>
+
+                        @Html.Raw(Model.HowWeAre.Description)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- WHO WE ARE SECTION END -->
+    <!-- COVER SECTION START -->
+    <section id="cover">
+        <div class="cover-img">
+            <img class="img-fluid" src="~/img/@Model.Cover.ElementAt(1).Image" alt="" />
+        </div>
+    </section>
+    <!-- COVER SECTION END -->
+    <!-- PURPOSE OF ASSOCIATION SECTION START -->
+    <section id="purpose-assoc">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="info">
+                        @Html.Raw(Model.PurposeAssoc.Title)
+                        @Html.Raw(Model.PurposeAssoc.Description)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PURPOSE OF ASSOCIATION SECTION END -->
+    <!-- Subscribe Start -->
+    @await Component.InvokeAsync("Subscribe")
+    <!-- Subscribe End -->
+</main>
+<!-- MAIN END -->

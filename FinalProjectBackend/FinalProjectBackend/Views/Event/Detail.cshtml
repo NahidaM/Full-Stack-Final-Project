@@ -1,0 +1,84 @@
+﻿@model Event
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<!-- EVENT DETAILS SECTION START -->
+<section id="event-details">
+    <!-- Banner Area Start -->
+    <div class="banner-content">
+        <h2>Tədbirlər haqqında ətraflı məlumat</h2>
+    </div>
+    <!-- Banner Area End -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-6">
+                <div class="card first">
+                    <div class="item">
+                        <div class="img">
+                            <a href="#">
+                                <img class="img-fluid" src="~/img/@Model.Image" alt="" />
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h4>
+                                <a href="#">Uşaqlar gülsün deyə</a>
+                            </h4>
+                            <p>
+                                Dərnəyimiz, aztəminatlı bir ailə mühitində yaşayan,
+                                əlverişsiz şərtlərə görə küçədə işləyən, təhsillərini
+                                yarımçıq qoyan və ya qismən davam etdirən və şərtlərini
+                                yaxşılaşdıran uşaqlara və ailələrinə çatmaq üçün yaradılan
+                                bir dərnəkdir.
+                            </p>
+                            <p>
+                                Sizin kimi səxavətli insanlar Uşaqları Xilas etmək üçün bir
+                                ianə etdikdə, uşaqların həyatı xilas olur və gələcəkləri
+                                daha parlaq olur. Budur xeyriyyə ianəsi etməyin dörd yolu.
+                            </p>
+                            <p>
+                                Birdəfəlik hədiyyə verin - Bu gün verdiyiniz ianə -
+                                seçdiyiniz miqdarda - dünya uşaqlarının hər bir uşağın layiq
+                                olduğu şeylərə sahib olmasına kömək edir.
+                            </p>
+                            <p>
+                                Aylıq donor olun - İl ərzində davamlı dəstəyiniz ehtiyacı
+                                olan uşaqları, hər gün və böhran anlarında dəstəkləmək üçün
+                                əlverişli bir yoldur.
+                            </p>
+                            <p>
+                                Hədiyyələr kataloqu alver edin - Təmiz su dəstindən
+                                istifadəyə hazır terapevtik qidaya qədər hədiyyə
+                                kataloğumuzdan hədiyyə seçərək uşaqlara xilasetmə ianəsi
+                                verirsiniz.
+                            </p>
+                            <p>
+                                Uşağa sponsorluq - Uşaq sponsorluğu ehtiyacı olan bir uşağı
+                                sizin kimi bir mərhəmətli insanla əlaqələndirən bənzərsiz
+                                bir proqramdır.
+                            </p>
+                            <div class="post-date text-center">25 January 2021</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            
+            <div class="col-lg-3 col-md-6">
+                <div class="sidebar">
+                    <div class="side-title">Tədbirlərimiz</div>
+                    <ul>
+                      
+                            <li>
+                                <a href="">@Model.CategoryEvent.Name</a>
+                            </li>
+                        
+                    }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- EVENT DETAILS SECTION END -->

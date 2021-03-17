@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- MAIN START -->
+<main>
+    <!-- DONATE SECTİON START -->
+    <section id="donate">
+        <div class="container">
+            <h2 class="text-center">
+                Bir xəyalım var, qəhrəmanım olmaq istəyərsən? İanələrinizi idarə
+                edə, kimlərə nə şəkildə fayda gətirdiyinizi izləyə bilərsiniz.
+            </h2>
+
+            <div class="btnimg" style="text-align: center">
+                <img style="width: 200px" src="img/giphy-donate.gif" alt="" />
+                <!-- Trigger the modal with a button -->
+                <button type="button"
+                        class="btn btn-info btn-lg"
+                        data-toggle="modal"
+                        data-target="#myModal">
+                    İanə et
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Ödəniş üsulunuzu seçə bilərsiniz</h4>
+                            <button type="button" class="close" data-dismiss="modal">
+                                &times;
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a class="btn btn-danger"
+                                       asp-controller="PayPage" asp-action="Index">₼ Hesab nömrələrimiz</a> 
+                                </div>
+                                <div class="col-6">
+                                    <a href="paypage-2.html">
+                                        <button type="button"
+                                                class="btn btn-danger">
+                                            <i class="far fa-credit-card"></i> Onlayn ödəmə
+                                            sistemi
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DONATE SECTİON END -->
+</main>
+<!-- MAIN END -->

@@ -1,0 +1,105 @@
+#login {
+  position: relative;
+  padding-bottom: 120px;
+  .account {
+    margin-top: 50px;
+    .left-side {
+      padding: 60px 30px 60px 60px;
+      width: 70%;
+      border-radius: 10px 0px 0px 10px;
+      box-shadow: 0 0 15px rgba(44, 46, 69, 0.11);
+      .header {
+        margin-bottom: 55px;
+      }
+      form {
+        .form-group {
+          position: relative;
+          font-size: 16px;
+          text-align: center;
+          &:first-child {
+            margin-bottom: 30px;
+          }
+          input {
+            height: 50px;
+            border: 1px solid rgba(97, 90, 191, 0.2);
+            background: #ffffff;
+            padding: 0 75px;
+            &:focus {
+              outline: 0 !important;
+              box-shadow: none;
+            }
+          }
+          label {
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          span {
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            cursor: pointer;
+          }
+          a {
+            color: #52606d;
+            text-decoration: none;
+          }
+          button {
+            border: none;
+            display: inline-block;
+            color: #ffffff;
+            border-radius: 30px;
+            font-weight: 500;
+            padding: 12px 30px 10px;
+            font-size: 18px;
+            width: 100%;
+            max-width: 230px;
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            background: -webkit-linear-gradient(
+              90deg,
+              #c38d9e 0%,
+              #e9b5c6 56%,
+              #d3b3bd 100%
+            );
+          }
+        }
+      }
+    }
+    .right-side {
+      background: -webkit-linear-gradient(
+        90deg,
+        #c38d9e 0%,
+        #e9b5c6 56%,
+        #d3b3bd 100%
+      );
+      border-radius: 0 10px 10px 0;
+      width: 30%;
+      padding: 60px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      h2 {
+        font-size: 36px;
+        margin-bottom: 18px;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        border-radius: 30px;
+        padding: 12px 30px 10px;
+        font-size: 18px;
+        box-shadow: -1.04px 4.891px 20px 0px rgba(69, 49, 183, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        font-weight: 500;
+      }
+    }
+  }
+}

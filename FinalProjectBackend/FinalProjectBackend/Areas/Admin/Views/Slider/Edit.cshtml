@@ -1,0 +1,40 @@
+﻿@model Slider
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="col-12 grid-margin ">
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">Edit Photo</h3>
+            <img src="~/img/@Model.Image" alt="#" width="100%" />
+        </div>
+    </div>
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <form class="forms-sample" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label asp-for="Photo">File upload</label>
+                        <input asp-for="Photo" class="file-upload-default" accept="image/*">
+
+                        <div class="input-group col-xs-8">
+                            <input type="text" class="form-control file-upload-info" accept="image/*" placeholder="Upload Image">
+                            <span class="input-group-append">
+                                <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+                            </span>
+                        </div>
+                        <span asp-validation-for="Photo" class="text-danger mt-2" style="font-size:14px"></span>
+                    </div>
+                    <button type="submit" class="btn btn-success mr-2">Edit</button>
+                    <a class="btn btn-secondary" asp-action="Index">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    @section scripts{
+
+        <script src="~/admin/js/file-upload.js"></script>
+        <partial name="_Validation" />
+    }
+

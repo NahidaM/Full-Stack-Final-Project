@@ -1,0 +1,161 @@
+﻿@model Bio
+@{
+    ViewData["Title"] = "Default";
+}
+
+<header>
+    <!-- MIDDLE NAV START -->
+    <div class="middle-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="header-title mt-1">
+                        <h4 class="text-center">
+                            Şəhid Xudayar Yusifzadə adına Evsiz Uşaq və Gənclərin
+                            Müdafiəsi və İnkişafı Dərnəyi
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="header-left mt-3">
+                        <ul>
+                            <li>
+                                <a asp-controller="Join" asp-action="Index">
+                                    <button type="button" class="btn" style="color: white">
+                                        KÖNÜLLÜ OL
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <a  asp-controller="Donate" asp-action="Index">
+                                    <button type="button" class="btn" style="color: white">
+                                        İANƏ ET
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="header-right mt-3">
+                        <ul>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <li><a class="btn" style="text-decoration: none; background-color: #c38d9e; margin-top: -3px;
+                                    border: none; border-radius: 40px;width: 120px; padding: 7px; font-weight: 600;">@User.Identity.Name</a></li>
+                                <li><a class="btn" style="text-decoration: none; background-color: #c38d9e; margin-top: -3px;
+                                      border: none; border-radius: 40px;width: 120px; padding: 7px; font-weight: 600;" 
+                                    asp-controller="Account" asp-action="Logout">Hesabdan Çıx</a>
+                                </li>
+
+                            }
+                            else
+                            {
+                                
+                                <li><a class="btn" style="text-decoration: none; background-color: #c38d9e; margin-top: -3px;
+                                      border: none; border-radius: 40px;width: 120px; padding: 7px; font-weight: 600;" 
+                                       asp-controller="Account" asp-action="Login">Daxil Ol</a>
+                                </li>
+                                <li><a class="btn" style="text-decoration: none; background-color: #c38d9e; margin-top: -3px;
+                                      border: none; border-radius: 40px;width: 120px; padding: 7px; font-weight: 600;" 
+                                       asp-controller="account" asp-action="Register">Qeydiyyat</a>
+                                </li>
+                            }
+
+                            <li>
+                                <div class="profile">
+                                    <a href="profile.html">
+                                        <i class="fas fa-user-circle"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MIDDLE NAV END -->
+    <!-- MAİN NAV START -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg d-flex d-lg-block justify-content-between d-xl-flex navbar-light py-3 py-lg-0">
+                    <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                        <img src="~/img/@Model.Logo" alt="" id="logo" />
+                    </a>
+                    <button class="navbar-toggler"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                            id="mobile-navbar-show">
+                        <span class="navbar-toggler-icon"
+                              style="font-size: 12px"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse d-none d-lg-block"
+                         id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Home" asp-action="Index">Ana Səhifə</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="WeAre" asp-action="Index">Biz kimik?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Product" asp-action="Index">Məhsullar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Event" asp-action="Index">Tədbirlər</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Contact" asp-action="Index">Əlaqə</a>
+                            </li>
+                            <li class="nav-item my-auto search">
+                                <i class="fas fa-search" id="search"></i>
+                                <ul class="list-unstyled py-3">
+                                    <li class="d-flex px-3">
+                                        <input id="input-search"
+                                               type="text"
+                                               placeholder="Search" />
+                                        <i class="fas fa-search my-auto" id="search"></i>
+                                        <ul id="search-list">
+                                        </ul>
+                                    </li>
+                                 
+                                 
+                                </ul>
+                            </li>
+                            <li class="nav-item my-auto shop-cart">
+                                <a style="text-decoration:none; font-size:16px" asp-controller="Main" asp-action="Basket"><i class="fas fa-shopping-bag"></i></a>
+                                <sup style="padding: 0px 7px;" class="rounded-circle" id="basket-count">@ViewBag.Count</sup>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="mobile-navbar position-absolute shadow-lg h-100 p-5">
+            <i class="fas fa-times fa-lg" id="mobile-navbar-close"></i>
+            <ul class="list-unstyled">
+                <li><a asp-controller="Home" asp-action="Index">Ana Səhifə </a></li>
+
+                <li><a asp-controller="WeAre" asp-action="Index">Biz kimik?</a></li>
+
+                <li><a asp-controller="Product" asp-action="Index">Məhsullar </a></li>
+
+                <li><a asp-controller="Event" asp-action="Index">Tədbirlər </a></li>
+
+                <li><a asp-controller="Contact" asp-action="Index">Əlaqə </a></li>
+            </ul>
+        </div>
+    </div> 
+    <!-- MAIN NAV END -->
+</header>
+

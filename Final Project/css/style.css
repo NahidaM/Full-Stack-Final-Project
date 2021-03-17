@@ -813,7 +813,6 @@ header .mobile-navbar.active {
 }
 
 #services .item .edu {
-  background-image: url(../img/education.jpg);
   background-repeat: no-repeat;
   background-position: center center !important;
   background-size: cover !important;
@@ -823,7 +822,6 @@ header .mobile-navbar.active {
 }
 
 #services .item .health {
-  background-image: url(../img/health.jpg);
   background-repeat: no-repeat;
   background-position: center center !important;
   background-size: cover !important;
@@ -833,7 +831,6 @@ header .mobile-navbar.active {
 }
 
 #services .item .char {
-  background-image: url(../img/yellow-flowers.jpg);
   background-repeat: no-repeat;
   background-position: center center !important;
   background-size: cover !important;
@@ -843,7 +840,6 @@ header .mobile-navbar.active {
 }
 
 #services .item .rel {
-  background-image: url(../img/Sports-football.jpg);
   background-repeat: no-repeat;
   background-position: center center !important;
   background-size: cover !important;
@@ -853,7 +849,6 @@ header .mobile-navbar.active {
 }
 
 #services .item .sport {
-  background-image: url(../img/handmade.jpg);
   background-repeat: no-repeat;
   background-position: center center !important;
   background-size: cover !important;
@@ -987,46 +982,32 @@ header .mobile-navbar.active {
   margin-bottom: 30px;
 }
 
-#product .card .card-img-top {
+#product .card .img a img {
   height: 190px;
   width: 286px;
 }
 
-#product .card .card-body .card-title {
+#product .card .title2 h6 {
   color: #e27d60;
   font-size: 20px;
   text-align: center;
 }
 
-#product .card .card-body .card-text ul {
-  list-style-type: none;
-  text-align: center;
-  padding: 0px;
+#product .card .price span {
+  display: block;
+  margin-bottom: 15px;
 }
 
-#product .card .card-body .card-text ul li {
-  font-size: 15px;
-  font-weight: 500;
-}
-
-#product .card .card-body .card-text ul li button {
-  padding: 5px;
-  border-radius: 20px;
-}
-
-#product .card .card-body .card-text ul li button a {
+#product .card .price span a {
   text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
   color: #111111;
 }
 
-#product .card .card-body .card-text ul li button a i {
+#product .card .price span a i {
   margin-right: 5px;
   color: #c38d9e;
-}
-
-#product .card .card-body .card-text ul .cart {
-  margin-top: 10px;
-  width: 260px;
 }
 
 #events {

@@ -1,0 +1,178 @@
+﻿
+@model HomeVM   
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- MAIN START -->
+<main>
+    <!-- SLIDER SECTION START -->
+    <section id="slider">
+        <div class="owl-carousel slider">
+            @foreach (Slider slide in Model.Sliders)
+            {
+                <div> <img src="~/img/@slide.Image" alt=""> </div>
+            }
+        </div>
+        <div class="container context pl-lg-5 ml-lg-3">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="text">
+
+                        @Html.Raw(Model.AboutSlider.Title)
+
+                        <p class="text-black-50 d-none d-sm-block">
+                            @Model.AboutSlider.Description
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SLIDER SECTION END -->
+    <!-- VOLUNTEER SECTION START -->
+    <section id="volunteer">
+        <div class="container-fluid">
+            <div class="row align-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="join">
+                        <div class="icon">
+                            @Html.Raw(Model.Volunteers.ElementAt(0).Icon)
+                        </div>
+                        <div class="content">
+                            <h4>@Model.Volunteers.ElementAt(0).Title</h4>
+                            <p>
+                                @Model.Volunteers.ElementAt(0).Description
+                            </p>
+                            <a href="donate.html" class="thm-btn inverse">@Model.Volunteers.ElementAt(0).Buton</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="donate">
+                        <div class="icon">
+                            @Html.Raw(Model.Volunteers.ElementAt(1).Icon)
+                        </div>
+                        <div class="content">
+                            <h4>@Model.Volunteers.ElementAt(1).Title</h4>
+                            <p>
+                                @Model.Volunteers.ElementAt(1).Description
+                            </p>
+                            <a href="join.html" class="thm-btn inverse">@Model.Volunteers.ElementAt(1).Buton </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- VOLUNTEER SECTION END -->
+    <!-- WORKSHOP SECTION START -->
+    <section id="workshop">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12">
+                    <h4>@Model.Workshop.Title</h4>
+                    <p>
+                        @Html.Raw(Model.Workshop.Description)
+                    </p>
+                    <a href="products.html">@Model.Workshop.MoreInfo </a>
+                </div>
+
+                <div class="col-lg-7 col-md-12">
+                    <img alt=""
+                         class="img-fluid"
+                         height="350"
+                         src="~/img/@Model.Workshop.Image" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- WORKSHOP SECTION END -->
+    <!-- EVENT SECTİON START -->
+    <section id="event">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="purpose text-center">
+                        <h2>TƏDBİRLƏRİMİZ</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @foreach (var events in Model.Events)
+                {
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card first">
+                            <div class="item">
+                                <div class="img">
+                                    <a asp-controller="Event" asp-action="Detail" asp-route-id="@events.Id"><img src="~/img/@events.Image" alt="" /></a>
+                                </div>
+                                <div class="text">
+                                    <h4>
+                                        <a asp-controller="Event" asp-action="Detail" asp-route-id="@events.Id"> @events.Title</a>
+                                    </h4>
+                                    <p>
+                                        @events.Description
+                                    </p>
+                                    <div class="post-date text-center">@events.Time.ToString("dd MMMM yyyy") </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+    <!-- EVENT SECTİON END -->
+    <!-- OUR PURPOSE SECTION START -->
+    <section id="our-purpose">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="purpose text-center">
+                        <h2>Missiyamız və Məqsədimiz</h2>
+                        <p>
+                            @Html.Raw(Model.OurPurpose.Subtitle)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="place">
+                        <div class="text">
+                            <h5>@Model.OurPurpose.Title</h5>
+                            <h4>
+                                @Model.OurPurpose.Description
+                            </h4>
+                            <p>
+                                @Html.Raw(Model.OurPurpose.Information)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="image">
+                        <img src="~/img/@Model.OurPurpose.Image" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- OUR PURPOSE SECTION END -->
+    <!-- SERVICES SECTION START -->
+    <section id="services">
+        <div class="owl-carousel owl-theme owl-2">
+            @foreach (var service in Model.Services)
+            {
+                <div class="item"><h4 class="edu" style="background-image: url(./img/@service.Image);">@service.Description</h4></div>
+            }
+        </div>
+        <div class="owl-dots disabled"></div>
+    </section>
+    <!-- SERVICES SECTION END -->
+    <!-- Subscribe Start -->
+    @*@await Component.InvokeAsync("Subscribe")*@
+    <!-- Subscribe End -->
+</main>
+<!-- MAIN END -->

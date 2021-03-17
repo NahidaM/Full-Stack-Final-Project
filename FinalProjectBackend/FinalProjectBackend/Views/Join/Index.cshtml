@@ -1,0 +1,118 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- MAIN START -->
+<main>
+    <!-- Join-us section start -->
+    <section id="join-us">
+        <div class="container">
+            <div class="text-center info">
+                <h4>
+                    Dəstəyiniz keçmişini küçələrdə yaşamaq məcburiyyətində qalmış və
+                    gündəlik həyata uyğunlaşmağa çalışan gənclərimizin motivasiyasını
+                    artıracaqdır
+                </h4>
+                <img src="img/join-down.gif" style="height: 170px; width: 165px" />
+            </div>
+            <div class="your-about">
+                <form name="RegForm" onsubmit="return myForm()" method="post">
+                    <p class="fix">Ad, Soyad: <input type="text" name="Name" /></p>
+                    <br />
+                    <p class="fix">
+                        Doğum tarixiniz: <input type="date" name="bday" />
+                    </p>
+                    <br />
+                    <p class="fix">Telefon: <input type="text" name="Telephone" /></p>
+                    <br />
+                    <p class="fix">
+                        E-mail Adresiniz: <input type="text" name="EMail" />
+                    </p>
+                    <br />
+                    <p class="fix">Təhsiliniz: <input type="text" /></p>
+                    <br />
+                    <p class="fix">
+                        Məktəb/Universitet/Kollec: <input type="text" />
+                    </p>
+                    <br />
+                    <p class="fix">İxtisasınız: <input type="text" /></p>
+                    <br />
+                    <p class="fix">Adresiniz: <input type="text" name="Address" /></p>
+                </form>
+                <br />
+                <div class="row">
+                    <div class="col-6">
+                        <form name="RegForm" onsubmit="return myForm()" method="post">
+                            <p class="title">
+                                Qan qrupunuzu seçin:
+                                <select type="text" value="" name="Blood">
+                                    <option>I qrup (0 RH+)</option>
+                                    <option>I qrup (0 RH-)</option>
+                                    <option>II qrup (A RH+)</option>
+                                    <option>II qrup (A RH-)</option>
+                                    <option>III qrup (B RH+)</option>
+                                    <option>III qrup (B RH-)</option>
+                                    <option>IV qrup (AB RH+)</option>
+                                    <option>IV qrup (AB RH-)</option>
+                                </select>
+                            </p>
+                            <br />
+                            <p class="title">Daha öncə könüllü olaraq çalışıbsınızmı?</p>
+                            <input type="radio" name="question" value="question" />
+                            <label>Bəli</label><br />
+                            <input type="radio" name="question" value="question" />
+                            <label>Xeyr</label><br />
+
+                            <br />
+                            <p class="title">
+                                Proyektlərimizə ayıra biləcəyiniz vaxtınız
+                            </p>
+                            <input type="radio" name="question" value="question" />
+                            <label>Həftə içi gündüz</label><br />
+                            <input type="radio" name="question" value="question" />
+                            <label>Həftə içi axşam</label><br />
+                            <input type="radio" name="question" value="question" />
+                            <label>Həftə sonu</label><br />
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <form name="RegForm" onsubmit="return myForm()" method="post">
+                            <p class="title">
+                                Layihələrə töhfə verə biləcəyinizi düşündüyünüz sahələr:
+                                <br />
+                            </p>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="checkbox" /><label>
+                                        Kompüter istifadəsi
+                                    </label><br />
+                                    <input type="checkbox" /> <label> Xarici dil</label><br />
+                                    <input type="checkbox" /> <label> Fotoqrafiya</label><br />
+                                    <input type="checkbox" /> <label> İdman</label><br />
+                                </div>
+                                <div class="col-6">
+                                    <input type="checkbox" /> <label> Ədəbiyyat</label><br />
+                                    <input type="checkbox" /> <label> Musiqi</label><br />
+                                    <input type="checkbox" /> <label> Rəsm</label><br />
+                                    <input type="checkbox" /> <label> Digər</label>
+                                </div>
+                            </div>
+
+                            <p class="title">
+                                Əlavə qeydləriniz: <br /><textarea name="Comment"></textarea>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <form name="RegForm" onsubmit="return myForm()" method="post" class="text-center btns">
+                    <input type="submit" value="Könüllü ol" name="Submit" />
+                    <input type="reset" value="Düzəliş et" name="Reset" />
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Join-us section end -->
+</main>
+<!-- MAIN END -->

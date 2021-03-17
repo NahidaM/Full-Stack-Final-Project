@@ -1,0 +1,114 @@
+﻿@model Bio 
+@{
+    ViewData["Title"] = "Default";
+}
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="healdi text-white">
+                    <p>
+                        Uşaqlarımız və gənclərimiz səni gözləyir. Əlini ver, gələcəyi
+                        aydınlat ...
+                    </p>
+                    <div class="adress">
+                        <ul>
+                            <li>
+                                <div class="email position-relative text-white">
+                                    <h5>Email:</h5>
+                                    <span>support@childcare.com</span>
+                                    <i class="fas fa-envelope-open-text fa-2x"></i>
+                                </div>
+                            </li>
+                            <li class="phone-li">
+                                <div class="email position-relative text-white">
+                                    <h5>Phone:</h5>
+                                    <span>+994 123 456 789</span>
+                                    <i class="fas fa-phone-volume fa-2x"
+                                       style="transform: rotate(-45deg)"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 links">
+                <div class="services">
+                    <h4>Xidmətlər</h4>
+                    <ul>
+                        <li><a href="">Təhsil</a></li>
+                        <li><a href="">Sağlamlıq</a></li>
+                        <li><a href="">Xeyriyyə Təşkilatları </a></li>
+                        <li><a href="">Gənclərə Peşə Seçmə</a></li>
+                        <li><a href="">Bacarıqlı Əllər</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 links">
+                <div class="useful">
+                    <h4>Faydalı Linklər</h4>
+                    <ul>
+                        <li><a asp-controller="Home" asp-action="Index">Haqqımızda</a></li>
+                        <li>
+                            <a  asp-controller="HowWeAre" asp-action="Index">Biz kimik, məqsədimiz nədir?</a>
+                        </li>
+                        <li><a  asp-controller="Product" asp-action="Index">Məhsullar</a></li>
+                        <li><a  asp-controller="Event" asp-action="Index">Tədbirlər</a></li>
+                        <li><a  asp-controller="Contact" asp-action="Index">Əlaqə</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="branches">
+                    <div class="branch">
+                        <ul class="pl-0">
+                            <li>
+                                <b>ƏLAQƏ VASİTƏLƏRİ</b>
+                                <span>
+                                    Ünvanınız bura, Street City, Bakı Azərbaycan
+                                    <br />
+                                    +994 123 456 789
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sosial Footer start -->
+    <div class="footer-end">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-white">
+                    <div class="copy">
+                        <p>
+                            08/02/2021. Designed by
+                            <a href="">Nahida Mamishova</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-white">
+                    <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <a href="@Model.Facebook"> 
+                            <p><b>Facebook</b></p>
+                        </a>
+                        <i class="fab fa-twitter"></i>
+                        <a href="@Model.Twitter">
+                            <p><b> Twitter</b></p>
+                        </a>
+                        <i class="fab fa-youtube"></i>
+                        <a href="@Model.Youtube">
+                            <p><b> Youtube</b></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sosial Footer end-->
+</footer>
+

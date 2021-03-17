@@ -1,0 +1,103 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210314215528_Event.cs" />
+    <Compile Remove="Migrations\20210314215528_Event.Designer.cs" />
+    <Compile Remove="Migrations\20210314215858_Events.cs" />
+    <Compile Remove="Migrations\20210314215858_Events.Designer.cs" />
+    <Compile Remove="Migrations\20210315125913_ProductCategoryTable.cs" />
+    <Compile Remove="Migrations\20210315125913_ProductCategoryTable.Designer.cs" />
+    <Compile Remove="Migrations\20210315130045_ProductCategoryTable.cs" />
+    <Compile Remove="Migrations\20210315130045_ProductCategoryTable.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\admin\assets\css\maps\style.css.map" />
+    <None Include="wwwroot\admin\assets\fonts\.DS_Store" />
+    <None Include="wwwroot\admin\assets\fonts\Roboto\.DS_Store" />
+    <None Include="wwwroot\admin\assets\fonts\Roboto\Roboto-Black.woff2" />
+    <None Include="wwwroot\admin\assets\fonts\Roboto\Roboto-Bold.woff2" />
+    <None Include="wwwroot\admin\assets\fonts\Roboto\Roboto-Light.woff2" />
+    <None Include="wwwroot\admin\assets\fonts\Roboto\Roboto-Medium.woff2" />
+    <None Include="wwwroot\admin\assets\fonts\Roboto\Roboto-Regular.woff2" />
+    <None Include="wwwroot\admin\assets\images\.DS_Store" />
+    <None Include="wwwroot\admin\assets\images\auth\.DS_Store" />
+    <None Include="wwwroot\admin\assets\images\faces\.DS_Store" />
+    <None Include="wwwroot\admin\assets\images\logo-mini.svg" />
+    <None Include="wwwroot\admin\assets\images\logo.svg" />
+    <None Include="wwwroot\admin\assets\js\.DS_Store" />
+    <None Include="wwwroot\admin\assets\js\chart.js" />
+    <None Include="wwwroot\admin\assets\js\Chart.min.js" />
+    <None Include="wwwroot\admin\assets\js\dashboard.js" />
+    <None Include="wwwroot\admin\assets\js\data-table.js" />
+    <None Include="wwwroot\admin\assets\js\dataTables.bootstrap4.js" />
+    <None Include="wwwroot\admin\assets\js\documentation.js" />
+    <None Include="wwwroot\admin\assets\js\file-upload.js" />
+    <None Include="wwwroot\admin\assets\js\hoverable-collapse.js" />
+    <None Include="wwwroot\admin\assets\js\jquery.dataTables.js" />
+    <None Include="wwwroot\admin\assets\js\jquery.validate.js" />
+    <None Include="wwwroot\admin\assets\js\jquery.validate.unobtrusive.js" />
+    <None Include="wwwroot\admin\assets\js\off-canvas.js" />
+    <None Include="wwwroot\admin\assets\js\tabs.js" />
+    <None Include="wwwroot\admin\assets\js\template.js" />
+    <None Include="wwwroot\admin\assets\vendors\.DS_Store" />
+    <None Include="wwwroot\admin\assets\vendors\base\bootstrap.min.js.map" />
+    <None Include="wwwroot\admin\assets\vendors\base\vendor.bundle.base.js" />
+    <None Include="wwwroot\admin\assets\vendors\chart.js\Chart.min.js" />
+    <None Include="wwwroot\admin\assets\vendors\datatables.net-bs4\dataTables.bootstrap4.js" />
+    <None Include="wwwroot\admin\assets\vendors\datatables.net\jquery.dataTables.js" />
+    <None Include="wwwroot\admin\assets\vendors\mdi\css\materialdesignicons.min.css.map" />
+    <None Include="wwwroot\admin\assets\vendors\mdi\fonts\materialdesignicons-webfont.svg" />
+    <None Include="wwwroot\admin\assets\vendors\mdi\fonts\materialdesignicons-webfont.woff2" />
+    <None Include="wwwroot\admin\css\maps\style.css.map" />
+    <None Include="wwwroot\admin\fonts\Roboto\Roboto-Black.woff2" />
+    <None Include="wwwroot\admin\fonts\Roboto\Roboto-Bold.woff2" />
+    <None Include="wwwroot\admin\fonts\Roboto\Roboto-Light.woff2" />
+    <None Include="wwwroot\admin\fonts\Roboto\Roboto-Medium.woff2" />
+    <None Include="wwwroot\admin\fonts\Roboto\Roboto-Regular.woff2" />
+    <None Include="wwwroot\admin\images\logo-mini.svg" />
+    <None Include="wwwroot\admin\images\logo.svg" />
+    <None Include="wwwroot\admin\js\chart.js" />
+    <None Include="wwwroot\admin\js\Chart.min.js" />
+    <None Include="wwwroot\admin\js\dashboard.js" />
+    <None Include="wwwroot\admin\js\data-table.js" />
+    <None Include="wwwroot\admin\js\dataTables.bootstrap4.js" />
+    <None Include="wwwroot\admin\js\documentation.js" />
+    <None Include="wwwroot\admin\js\file-upload.js" />
+    <None Include="wwwroot\admin\js\hoverable-collapse.js" />
+    <None Include="wwwroot\admin\js\jquery.dataTables.js" />
+    <None Include="wwwroot\admin\js\off-canvas.js" />
+    <None Include="wwwroot\admin\js\tabs.js" />
+    <None Include="wwwroot\admin\js\template.js" />
+    <None Include="wwwroot\admin\vendors\base\bootstrap.min.js.map" />
+    <None Include="wwwroot\admin\vendors\base\vendor.bundle.base.js" />
+    <None Include="wwwroot\admin\vendors\chart.js\Chart.min.js" />
+    <None Include="wwwroot\admin\vendors\datatables.net-bs4\dataTables.bootstrap4.js" />
+    <None Include="wwwroot\admin\vendors\datatables.net\jquery.dataTables.js" />
+    <None Include="wwwroot\admin\vendors\mdi\css\materialdesignicons.min.css.map" />
+    <None Include="wwwroot\admin\vendors\mdi\fonts\materialdesignicons-webfont.svg" />
+    <None Include="wwwroot\admin\vendors\mdi\fonts\materialdesignicons-webfont.woff2" />
+    <None Include="wwwroot\js\site.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+  </ItemGroup>
+
+</Project>

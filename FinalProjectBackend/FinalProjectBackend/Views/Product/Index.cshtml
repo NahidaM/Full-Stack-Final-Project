@@ -1,0 +1,23 @@
+﻿@model ProductVM
+@{
+    ViewData["Title"] = "Index";
+}
+<!-- PRODUCTS START -->
+
+<section id="product">
+    @await Component.InvokeAsync("Product", 12)
+    <div class="container">
+
+        <div class="row my-5 justify-content-center">
+            <input type="hidden" id="pro-count" value="@ViewBag.ProCount" />
+            <button style=" margin-bottom: 40px;" type="button" id="load-more" class="btn btn-danger btn-lg ">
+                <div class="spinner-border text-light d-none" id="load-spinner" role="status">
+                </div> Daha çox ...
+            </button>
+        </div>
+    </div>
+
+
+</section>
+
+<!-- PRODUCTS END -->

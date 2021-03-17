@@ -1,0 +1,52 @@
+#join-us {
+  padding-bottom: 30px;
+  background-color: rgb(241, 241, 207);
+  .info {
+    height: 100%;
+    padding-top: 90px;
+    h4 {
+      font-weight: 700;
+      color: $color-black;
+    }
+  }
+
+  .your-about {
+    form {
+      .fix {
+        margin-bottom: 5px;
+        font-weight: 700;
+        input {
+          width: 100% !important;
+          padding: 10px;
+          border-radius: 5px;
+          border-color: rgb(226, 185, 221);
+        }
+      }
+
+      .title {
+        font-weight: 700;
+        select {
+          padding: 4px;
+          border-radius: 5px;
+        }
+        textarea {
+          width: 100%;
+          border-radius: 10px;
+          height: 130px;
+        }
+      }
+    }
+  }
+
+  .btns {
+    padding: 30px;
+    input {
+      padding: 10px;
+      border-radius: 20px;
+      width: 49%;
+      background-color: rgb(197, 189, 142);
+      border-color: antiquewhite;
+      font-weight: 700;
+    }
+  }
+}

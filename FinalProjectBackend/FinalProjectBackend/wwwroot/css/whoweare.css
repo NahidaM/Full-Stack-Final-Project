@@ -1,0 +1,16 @@
+#whoweare {
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+#whoweare .info h5 a {
+  text-decoration: none;
+  color: #e27d60;
+}
+
+#whoweare .info p span {
+  color: #e27d60;
+  font-size: 18px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=whoweare.css.map */

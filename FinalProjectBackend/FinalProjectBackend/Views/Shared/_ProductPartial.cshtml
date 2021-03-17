@@ -1,0 +1,23 @@
+﻿@model List<Product>
+@foreach (Product pro in Model)
+{
+    <div class="col-sm-6 col-md-4 col-lg-3 mt-3 ">
+        <div class="product-item text-center card" data-id="@pro.Category.Name.ToLower()">
+            <div class="img">
+                <a href="">
+                    <img style=" height: 190px; width: 286px;" src="~/img/@pro.Image" class="img-fluid" alt="">
+                </a> 
+            </div>
+            <div class="title2 my-2">
+                <h6 style=" color: #e27d60; font-size: 20px; text-align: center;">@pro.Name.ToUpper()</h6>
+            </div>
+            <div class="price">
+                <span style=" display: block; margin-bottom: 15px;" class="text-black-50 add-basket">
+                    <input type="hidden" value="@pro.Id" />
+                    <a style="text-decoration: none; font-weight: 600; font-size: 20px; color: #111111;" href="#">Səbətə əlavə edin</a>
+                </span>
+                <span style=" display: block; margin-bottom: 15px;" class="text-black-50">Qiymət: @pro.Price AZN</span>
+            </div>
+        </div>
+    </div>
+}

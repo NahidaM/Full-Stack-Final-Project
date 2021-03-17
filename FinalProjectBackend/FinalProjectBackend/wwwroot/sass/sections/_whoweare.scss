@@ -1,0 +1,22 @@
+#whoweare {
+  padding-bottom: 60px;
+  padding-top: 50px;
+  background-color: rgb(243, 240, 240);
+  .info {
+    h5 {
+      a {
+        text-decoration: none;
+        color: #e27d60;
+      }
+    }
+    p {
+      color: #4e4c4c;
+      line-height: 26px;
+      span {
+        color: #e27d60;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+}

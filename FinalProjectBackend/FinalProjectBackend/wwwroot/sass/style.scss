@@ -1,0 +1,33 @@
+// import lib
+
+@import "library/variables";
+@import "library/common";
+@import "library/mixins";
+
+// import sections
+
+@import "sections/header";
+@import "sections/slider";
+@import "sections/volunteer";
+@import "sections/workshop";
+@import "sections/event";
+@import "sections/our-purpose";
+@import "sections/services";
+@import "sections/subscribe";
+@import "sections/whoweare";
+@import "sections/association";
+@import "sections/product";
+@import "sections/events";
+@import "sections/contact";
+@import "sections/paypage-1";
+@import "sections/profile";
+@import "sections/favorites";
+@import "sections/event-details";
+@import "sections/footer";
+
+// import extra page
+
+@import "sections/login";
+@import "sections/register";
+@import "sections/donate";
+@import "sections/join_us";
